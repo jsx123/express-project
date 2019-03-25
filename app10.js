@@ -14,3 +14,6 @@ app.get('/get1',(req,res)=>{
 })
 app.listen(3000)
 console.log('port:3000')
+console.log(1234567890)
+console.log(1234567890)
+console.log(1234567890)
