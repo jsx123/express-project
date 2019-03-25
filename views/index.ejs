@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <div id="main">
+     <h1>以下内容全部来自于ejs的模板渲染</h1>
+     <hr/>
+     <h1><%= num %></h1>
+     <h2><%= arr1 %></h2>
+     <hr/>
+     <!-- 如果通过ejs写逻辑可以这样实现展开arr数组 -->
+     <ul>
+        <% for(var i=0;i<arr1.length;i++){ %> 
+        <li>这是ejs模板遍历渲染的结果：<%= arr1[i] %></li>
+        <% } %> 
+     </ul>
+     <h2><%= obj %></h2>
+     <hr/>
+     <ol>
+         <% for(var key in obj){ %>
+         <li><%= key %>:<%= obj[key] %></li>
+         <% } %>
+     </ol>
+   </div> 
+</body>
+</html>
